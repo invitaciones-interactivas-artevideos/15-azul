@@ -411,8 +411,8 @@ portada: {
 diseno: {
    paleta: 3,
    fuenteTitulo:9,
-   fuenteTexto: 8,
-   tamañoTitulo: "2.1rem", //de las secciones
+   fuenteTexto: 2,
+   tamañoTitulo: "2.5rem", //de las secciones
    tamañoTexto: "1.2rem",  //de las secciones
    espacioTituloATexto: 30,
    espacioTextoABoton: 40,
@@ -483,7 +483,7 @@ ornamentos: {
 },
 
 cierre: {
-    t: "¡Te espero!",
+    t: "¡Te Espero!",
     s: "Tu presencia es muy importante<br> para mí."
 },
 
@@ -781,7 +781,7 @@ if (CONFIG.eventos.fiesta.mostrar) {
   createSec('ubicacion', 'map', 'Fecha y Lugar:', ubicacionHTML);
   let g = `<div class="gallery-grid">`;
 CONFIG.fotos.forEach(f => g += `<div class="gallery-item" onclick="openLightbox('${f}')"><img src="${f}"></div>`);
-createSec('galeria', 'camera', 'Mis recuerdos', g + `</div>`);
+createSec('galeria', 'camera', 'Mis Recuerdos', g + `</div>`);
 createSec('rsvp', 'star', 'Confirmación', `<p>Por favor, confirma tu asistencia antes del 10 de noviembre.</p><a href="https://wa.me/59899000000" target="_blank" class="btn">Confirmar WhatsApp</a>`);
 if (CONFIG.playlist.mostrar) {
     createSec('playlist', 'music', CONFIG.playlist.titulo, `<p>${CONFIG.playlist.texto}</p><a href="${CONFIG.playlist.formulario}" target="_blank" class="btn">${CONFIG.playlist.boton}</a>`);
