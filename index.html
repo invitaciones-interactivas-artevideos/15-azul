@@ -465,7 +465,7 @@ regalos: {
 ornamentos: {
     secciones: {
         mostrar: true, // Cambiar a false para ocultar los ornamentos
-        tipo: "ramas", // floral, estrellas, ondas, rosa, ramas, mariposas
+        tipo: "rosa", // floral, estrellas, ondas, rosa, ramas, mariposas
         color: "", // Dejar vacio para usar el color del boton de la paleta
         opacidad: 0.20,
         tamaño: 240,
@@ -808,13 +808,24 @@ const ORNAMENTOS = {
              C90 50,70 55,60 60Z"/>
     <line x1="60" y1="40" x2="60" y2="80"/>
 </svg>`,
-    rosa: `
-<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.5">
-  <circle cx="60" cy="60" r="12"/>
-  <path d="M60 20 Q75 40 60 60"/>
-  <path d="M100 60 Q80 75 60 60"/>
-  <path d="M60 100 Q45 80 60 60"/>
-  <path d="M20 60 Q40 45 60 60"/>
+  rosa: `
+<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M60 60
+           C55 50, 45 45, 48 35
+           C52 22, 68 22, 72 35
+           C75 45, 65 50, 60 60Z"/>
+
+  <path d="M60 60
+           C50 62, 40 55, 42 45
+           C45 32, 58 30, 60 40"/>
+
+  <path d="M60 60
+           C70 62, 80 55, 78 45
+           C75 32, 62 30, 60 40"/>
+
+  <path d="M60 60
+           C55 70, 50 80, 60 88
+           C70 80, 65 70, 60 60"/>
 </svg>`,
 
 ramas: `
